@@ -35,7 +35,7 @@ const CoursesSection: React.FC = () => {
           Tutorials About Running
         </h2>
       </div>
-      // Cards
+      {/* Cards */}
       <div className='max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-5'>
         {cards.map((card, index) => (
           <div
@@ -47,7 +47,7 @@ const CoursesSection: React.FC = () => {
               alt={card.title}
               className='w-full h-56 mb-2 object-cover'
             />
-            // Card Content
+            {/* Card Content */}
             <div className='p-0 text-left flex flex-col flex-grow'>
               <h3 className='text-lg sm:text-xl font-semibold text-white mb-2'>
                 {card.title}

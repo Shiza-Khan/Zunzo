@@ -55,7 +55,7 @@ const RunningEventsSection: React.FC = () => {
         {events.map((event, index) => (
           <div
             key={index}
-            className='relative w-full max-w-6xl h-auto  overflow-hidden'
+            className='relative w-full  max-w-6xl h-auto  overflow-hidden'
             style={{
               backgroundImage: `url(${event.image})`,
               backgroundSize: 'cover',
@@ -74,7 +74,7 @@ const RunningEventsSection: React.FC = () => {
                   clipPath: 'polygon(0 0, 90% 0, 100% 14%, 86% 100%, 0 100%)',
                 }}
               ></div>
-              //Left Black Box
+              {/* black box */}
               <div
                 className='absolute bg-black text-white flex flex-col justify-start
              pt-3 sm:pt-6 md:pt-8

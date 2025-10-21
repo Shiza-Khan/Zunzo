@@ -79,7 +79,7 @@ const RunningEventsSection: React.FC = () => {
                 className='absolute bg-black text-white flex flex-col justify-start
              pt-3 sm:pt-6 md:pt-8
              px-1 sm:px-4 md:px-6 lg:px-10 
-             w-[120px] sm:w-[160px] md:w-[240px] lg:w-[350px]
+             w-[130px] sm:w-[170px] md:w-[240px] lg:w-[350px]
              left-0 h-full z-20 transition-all duration-300'
                 style={{
                   clipPath: 'polygon(0 0, 90% 0, 100% 25%, 70% 100%, 0 100%)',

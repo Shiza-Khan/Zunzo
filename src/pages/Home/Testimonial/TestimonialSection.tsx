@@ -15,7 +15,7 @@ const TestimonialSection: React.FC = () => {
         <img
           src='https://images.pexels.com/photos/26763544/pexels-photo-26763544/free-photo-of-smiling-kid-on-a-path-in-the-countryside.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
           alt='Runner'
-          className='w-[220px] sm:w-[260px] md:w-[300px] h-[340px] sm:h-[380px] md:h-[420px] object-cover border-black rounded-lg shadow-lg'
+          className='w-full sm:w-[260px] md:w-[300px] h-[340px] sm:h-[380px] md:h-[420px] object-cover border-black rounded-lg shadow-lg'
         />
       </div>
 

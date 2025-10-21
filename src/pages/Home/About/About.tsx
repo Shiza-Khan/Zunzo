@@ -48,10 +48,10 @@ const About: React.FC = () => {
         <h4 className='text-sm uppercase tracking-widest text-[#c3e92d] font-semibold mb-3'>
           About Us
         </h4>
-        <h2 className='text-2xl sm:text-4xl font-bold mb-5'>
+        <h2 className='text-xl  sm:text-1xl  md:text:2xl lg:text-3xl font-bold mb-5'>
           Welcome to Run Club
         </h2>
-        <p className='text-gray-300 leading-relaxed text-sm'>
+        <p className='text-gray-300 leading-relaxed text-sm md:text-xl lg:text-1xl'>
           At Run Club, we celebrate every stride. Whether you’re a beginner or a
           seasoned runner, our community brings you together to share passion,
           motivation, and performance. Let’s run, grow, and inspire — together.
@@ -90,7 +90,9 @@ const About: React.FC = () => {
         {scrollLeftPos > 0 && (
           <button
             onClick={scrollLeftClick}
-            className='absolute left-0 top-1/2 -translate-y-1/2 h-[20%] px-3 bg-[#c3e92d] rounded-4xl hover:shadow-lg shadow-black/50 transition-opacity duration-200 opacity-0 group-hover:opacity-100 z-10 flex items-center justify-center'
+            className='absolute left-0 top-1/2 -translate-y-1/2 h-[20%] px-3 bg-[#c3e92d] 
+            rounded-4xl hover:shadow-lg shadow-black/50 transition-opacity
+             duration-200 opacity-0 group-hover:opacity-100 z-10 flex items-center justify-center'
           >
             <ChevronLeft size={30} className='text-black' />
           </button>

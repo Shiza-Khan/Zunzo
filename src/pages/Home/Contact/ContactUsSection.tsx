@@ -11,7 +11,7 @@ const ContactUsSection: React.FC = () => {
     <section className='w-full relative'>
       {/* Background Image Section */}
       <div
-        className='w-full h-[550px] md:h-[600px] bg-cover bg-center relative'
+        className='w-full min-h-screen md:h-[600px] bg-cover bg-center relative'
         style={{
           backgroundImage:
             "url('https://twa.com.pk/wp-content/uploads/2025/01/IMG-20250127-WA0010.jpg')",
@@ -22,7 +22,7 @@ const ContactUsSection: React.FC = () => {
         {/* Overlay Map & Form */}
         <div
           className='absolute inset-0 flex flex-col md:flex-row items-center justify-center 
-         px-6 md:px-20'
+         px-4 md:px-20'
         >
           {/* Map */}
           <div className='w-full md:w-1/2 h-80 md:h-[400px] bg-white'>

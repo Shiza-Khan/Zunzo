@@ -35,7 +35,7 @@ const RunningBenefitsSection: React.FC = () => {
         <h4 className='text-sm uppercase tracking-[4px] text-[#c3e92d] font-semibold mb-3'>
           RUNNING BENEFITS
         </h4>
-        <h2 className='text-2xl sm:text-3xl font-bold mb-6 uppercase'>
+        <h2 className='text-sm sm:text-1xl md:text-2xl lg:text-3xl font-bold mb-6 uppercase'>
           Benefit of Running
         </h2>
       </div>
@@ -58,14 +58,16 @@ const RunningBenefitsSection: React.FC = () => {
 
             {/* Dotted Line */}
             <div className='flex items-center justify-center mb-4'>
-              <span className='w-20 border-t-2 border-dotted border-[#c2e72f]'></span>
+              <span className='w-20  border-t-2 border-dotted border-[#c2e72f]'></span>
             </div>
 
             {/* Title */}
-            <h3 className='text-xl font-semibold mb-3'>{benefit.title}</h3>
+            <h3 className='text-sm sm:text:xl md:text-1xl lg:text-2xl font-semibold mb-3'>
+              {benefit.title}
+            </h3>
 
             {/* Description */}
-            <p className='text-gray-400 text-sm leading-relaxed'>
+            <p className='text-gray-400 text-sm  leading-relaxed'>
               {benefit.description}
             </p>
           </div>

@@ -1,6 +1,6 @@
 // routes/publicRoutes.jsx
 import CommonErrorPage from '../components/404/CommonErrorPage'
-import MainLayout from '../Layouts/MainLayout'
+import MainLayout from '../pages/BaseLayout'
 import Home from '../pages/Home/Home'
 
 export const publicRoutes = [

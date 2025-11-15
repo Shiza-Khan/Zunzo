@@ -17,7 +17,6 @@ const FooterSection: React.FC = () => {
         className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-center
        sm:text-left items-center pb-5'
       >
-        {/*LOGO + ABOUT + SOCIAL ICONS */}
         <div>
           <div className='flex justify-center sm:justify-start items-center gap-3 mb-4'>
             <FaRunning className='text-[#c3e92d] text-4xl' />
@@ -66,7 +65,6 @@ const FooterSection: React.FC = () => {
           </div>
         </div>
 
-        {/* QUICK LINKS */}
         <div
           className='flex flex-col justify-center items-center 
          text-center'
@@ -92,7 +90,6 @@ const FooterSection: React.FC = () => {
           </div>
         </div>
 
-        {/* PAGES */}
         <div
           className='flex flex-col justify-center items-center 
          text-center'
@@ -116,7 +113,6 @@ const FooterSection: React.FC = () => {
           </div>
         </div>
 
-        {/*NEWSLETTER */}
         <div>
           <h3 className='text-xl font-semibold mb-5 text-white'>Newsletter</h3>
 
@@ -152,7 +148,6 @@ const FooterSection: React.FC = () => {
         </div>
       </div>
 
-      {/* BOTTOM BAR */}
       <div
         className='border-t border-gray-700 mt-5 pt-2 pb-2 text-gray-400 text-sm flex flex-col
        md:flex-row items-center justify-between gap-3'

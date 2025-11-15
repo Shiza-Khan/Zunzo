@@ -9,7 +9,6 @@ import {
 const ContactUsSection: React.FC = () => {
   return (
     <section className='w-full relative'>
-      {/* Background Image Section */}
       <div
         className='w-full min-h-screen md:h-[600px] bg-cover bg-center relative'
         style={{
@@ -19,12 +18,10 @@ const ContactUsSection: React.FC = () => {
       >
         <div className='absolute bottom-0 left-0 w-full h-25 md:h-35 bg-[#c3e92d]'></div>
 
-        {/* Overlay Map & Form */}
         <div
           className='absolute inset-0 flex flex-col md:flex-row items-center justify-center 
          px-4 md:px-20'
         >
-          {/* Map */}
           <div className='w-full md:w-1/2 h-80 md:h-[400px] bg-white'>
             <iframe
               title='map'
@@ -37,13 +34,11 @@ const ContactUsSection: React.FC = () => {
             ></iframe>
           </div>
 
-          {/* Contact Form */}
           <div className='w-full md:w-1/2  p-8 bg-black'>
             <h2 className='text-3xl text-white font-bold uppercase mb-6 text-center md:text-left'>
               Contact Us
             </h2>
 
-            {/* Phone & Email Row */}
             <div className='grid grid-cols-2 gap-4 mb-4'>
               <div>
                 <label className='block text-sm text-slate-300 mb-1'>
@@ -59,7 +54,6 @@ const ContactUsSection: React.FC = () => {
               </div>
             </div>
 
-            {/* Social Icons Row */}
             <div className='flex gap-4 mb-6'>
               <a
                 href='#'
@@ -87,7 +81,6 @@ const ContactUsSection: React.FC = () => {
               </a>
             </div>
 
-            {/* Name & Email Inputs */}
             <div className='grid grid-cols-2 gap-4 mb-4'>
               <div>
                 <input
@@ -105,7 +98,6 @@ const ContactUsSection: React.FC = () => {
               </div>
             </div>
 
-            {/* Telephone & Gender Inputs */}
             <div className='grid grid-cols-2 gap-4 mb-6'>
               <div>
                 <input
@@ -134,7 +126,6 @@ const ContactUsSection: React.FC = () => {
               </div>
             </div>
 
-            {/* Join Now Button */}
             <button className='bg-[#c3e92d] text-black  font-semibold uppercase tracking-wide px-6 py-2 rounded hover:bg-[#a8d627] transition-all'>
               Join Now
             </button>

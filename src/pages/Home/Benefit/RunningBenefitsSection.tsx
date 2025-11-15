@@ -30,7 +30,6 @@ const benefits = [
 const RunningBenefitsSection: React.FC = () => {
   return (
     <section className='w-full py-20 bg-black text-white px-6 sm:px-16'>
-      {/* Headings */}
       <div className='text-center mb-14'>
         <h4 className='text-sm uppercase tracking-[4px] text-[#c3e92d] font-semibold mb-3'>
           RUNNING BENEFITS
@@ -40,7 +39,6 @@ const RunningBenefitsSection: React.FC = () => {
         </h2>
       </div>
 
-      {/* Cards */}
       <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8'>
         {benefits.map((benefit, index) => (
           <div
@@ -49,24 +47,20 @@ const RunningBenefitsSection: React.FC = () => {
             bg-black p-8  text-center hover:scale-100 
             hover:bg-[#2b2b2b] transition-all duration-300'
           >
-            {/* Number */}
             <div className='flex items-center justify-center mb-4'>
               <span className='text-5xl font-bold text-[#c2e72f]'>
                 {benefit.number}
               </span>
             </div>
 
-            {/* Dotted Line */}
             <div className='flex items-center justify-center mb-4'>
               <span className='w-20  border-t-2 border-dotted border-[#c2e72f]'></span>
             </div>
 
-            {/* Title */}
             <h3 className='text-sm sm:text:xl md:text-1xl lg:text-2xl font-semibold mb-3'>
               {benefit.title}
             </h3>
 
-            {/* Description */}
             <p className='text-gray-400 text-sm  leading-relaxed'>
               {benefit.description}
             </p>

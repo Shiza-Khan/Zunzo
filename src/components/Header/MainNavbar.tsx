@@ -47,13 +47,11 @@ const MainNavbar: React.FC = () => {
   return (
     <div className='bg-black text-white py-3 relative z-50' ref={navRef}>
       <div className='container mx-auto px-4 flex items-center justify-between'>
-        {/* Logo */}
         <div className='flex items-center space-x-2'>
           <FontAwesomeIcon icon={faPersonRunning} size='2xl' />
           <h1 className='text-2xl font-bold tracking-wider'>Zunzo</h1>
         </div>
 
-        {/* Desktop Menu */}
         <nav className='hidden lg:block'>
           <ul className='flex items-center space-x-6 text-sm font-medium uppercase'>
             {menuItems.map((item) => (
@@ -75,7 +73,6 @@ const MainNavbar: React.FC = () => {
                   {item.name !== 'Contact' && <ChevronDown size={14} />}
                 </div>
 
-                {/* Bottom line */}
                 {item.name !== 'Contact' && (
                   <span
                     className={`absolute left-0 -bottom-1 w-full h-[2px] bg-[#c3e92d]
@@ -87,7 +84,6 @@ const MainNavbar: React.FC = () => {
                   ></span>
                 )}
 
-                {/* Dropdown */}
                 {selected === item.name &&
                   item.options.length > 0 &&
                   openDropdown === item.name && (
@@ -107,7 +103,6 @@ const MainNavbar: React.FC = () => {
           </ul>
         </nav>
 
-        {/* Right Side Buttons */}
         <div className='hidden lg:flex items-center space-x-6'>
           <button className='hover:text-[#c3e92d] transition-colors'>
             <Search size={18} />
@@ -133,7 +128,6 @@ const MainNavbar: React.FC = () => {
           </button>
         </div>
 
-        {/* Mobile Menu Button */}
         <button
           className='lg:hidden text-white'
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -142,10 +136,8 @@ const MainNavbar: React.FC = () => {
         </button>
       </div>
 
-      {/* Background Overlay when menu open */}
       {mobileMenuOpen && <div onClick={() => setMobileMenuOpen(false)}></div>}
 
-      {/* Mobile Menu (slide from right) */}
       <div
         className={`lg:hidden fixed top-0 right-0 h-full w-64 bg-[#111] z-50 shadow-2xl 
         transform transition-transform duration-500 ease-in-out 
@@ -181,7 +173,6 @@ const MainNavbar: React.FC = () => {
                 )}
               </div>
 
-              {/* Mobile Dropdown Options */}
               {mobileDropdown === item.name && item.options.length > 0 && (
                 <ul className='pl-4 mt-2 space-y-2 text-gray-300'>
                   {item.options.map((opt) => (

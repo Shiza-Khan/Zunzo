@@ -50,7 +50,6 @@ const RunningEventsSection: React.FC = () => {
         </p>
       </div>
 
-      {/* Event Banners */}
       <div className='flex flex-col gap-6 items-center'>
         {events.map((event, index) => (
           <div
@@ -63,7 +62,6 @@ const RunningEventsSection: React.FC = () => {
             }}
           >
             <div className='relative flex justify-between items-stretch h-full'>
-              {/* Green Edge */}
               <div
                 className='absolute bg-[#c3e92d] bottom-0 left-0 
                            h-[100px] sm:h-[90px] md:h-[100px] 
@@ -74,7 +72,6 @@ const RunningEventsSection: React.FC = () => {
                   clipPath: 'polygon(0 0, 90% 0, 100% 14%, 86% 100%, 0 100%)',
                 }}
               ></div>
-              {/* black box */}
               <div
                 className='absolute bg-black text-white flex flex-col justify-start
              pt-3 sm:pt-6 md:pt-8
@@ -110,7 +107,6 @@ const RunningEventsSection: React.FC = () => {
                   {event.time}
                 </div>
               </div>
-              {/* Right Ticket Section */}
               <div className='bg-black flex flex-row justify-between ml-auto h-full z-0'>
                 <div
                   className='flex flex-col justify-center items-center
@@ -136,7 +132,6 @@ const RunningEventsSection: React.FC = () => {
                   </button>
                 </div>
 
-                {/* Checker Pattern */}
                 <div className='flex justify-center'>
                   {[0, 1].map((pillar) => (
                     <div key={pillar} className='flex flex-col'>

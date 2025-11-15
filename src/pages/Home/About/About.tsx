@@ -20,7 +20,6 @@ const About: React.FC = () => {
   const [maxScroll, setMaxScroll] = useState(0)
   const scrollAmount = 400
 
-  // Track scroll position
   const handleScroll = () => {
     if (!scrollRef.current) return
     setScrollLeftPos(scrollRef.current.scrollLeft)
@@ -43,7 +42,6 @@ const About: React.FC = () => {
 
   return (
     <section className='w-full py-20 bg-[#2f2f2f] text-white px-6 sm:px-16'>
-      {/* Text Section */}
       <div className='max-w-3xl mb-5'>
         <h4 className='text-sm uppercase tracking-widest text-[#c3e92d] font-semibold mb-3'>
           About Us
@@ -58,7 +56,6 @@ const About: React.FC = () => {
         </p>
       </div>
 
-      {/* Image Carousel */}
       <div className='relative group max-w-[90rem] mx-auto'>
         <div
           ref={scrollRef}
@@ -86,7 +83,6 @@ const About: React.FC = () => {
           ))}
         </div>
 
-        {/* Left Button */}
         {scrollLeftPos > 0 && (
           <button
             onClick={scrollLeftClick}
@@ -98,7 +94,6 @@ const About: React.FC = () => {
           </button>
         )}
 
-        {/* Right Button */}
         {scrollLeftPos < maxScroll && (
           <button
             onClick={scrollRightClick}

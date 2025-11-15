@@ -9,7 +9,6 @@ const HeroSection: React.FC = () => {
           "url('https://thumbs.dreamstime.com/b/soccer-player-kicks-ball-wet-field-close-up-athlete-foot-orange-socks-cleats-football-match-rainy-weather-dynamic-386923077.jpg')",
       }}
     >
-      {/* Overlay */}
       <div className='absolute inset-0 bg-black/40'></div>
 
       <div className='relative z-10 max-w-2xl px-10 sm:px-16'>

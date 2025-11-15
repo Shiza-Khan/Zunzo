@@ -25,7 +25,6 @@ const NavbarTop: React.FC = () => {
           </div>
         </div>
 
-        {/*Social Icons */}
         <div className='flex items-center space-x-3'>
           <a href='#' className='hover:text-pink-500 transition-colors'>
             <Instagram size={16} />

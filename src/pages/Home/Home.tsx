@@ -1,4 +1,3 @@
-// import React from 'react'
 import HeroSection from './Hero/HeroSection'
 import StatsSection from './StatsSection/StatsSection'
 import About from './About/About'

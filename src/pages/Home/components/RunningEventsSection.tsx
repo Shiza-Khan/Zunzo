@@ -1,38 +1,7 @@
 import React from 'react'
 import { MapPin, CalendarDays, Clock } from 'lucide-react'
-
-interface Event {
-  title: string
-  location: string
-  date: string
-  time: string
-  price: string
-  image: string
-}
-
-const events: Event[] = [
-  {
-    title: 'Women Marathon Event 2024',
-    location: '710 1ST ST. EASTON, PA 18042 | CHESTER COUNTY',
-    date: 'OCT 20, 2024',
-    time: 'START 06:00 AM - UNTIL FINISH',
-    price: '$95',
-    image:
-      'https://www.shutterstock.com/image-photo/athlete-trail-running-desert-landscape-260nw-1323007985.jpg',
-  },
-  {
-    title: 'Women Marathon Event 2023',
-    location: '710 1ST ST. EASTON, PA 18042 | CHESTER COUNTY',
-    date: 'OCT 20, 2023',
-    time: 'START 06:00 AM - UNTIL FINISH',
-    price: '$45',
-    image:
-      'https://www.shutterstock.com/image-photo/running-athletes-jogging-on-trail-260nw-1273599259.jpg',
-  },
-]
-
+import { events } from '../utils/runningEventsSection'
 const boxes = Array.from({ length: 16 }, (_, i) => i)
-
 const RunningEventsSection: React.FC = () => {
   return (
     <section className='w-full bg-[#1b1b1b] text-white py-16 px-3 sm:px-8 overflow-hidden'>

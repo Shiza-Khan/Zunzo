@@ -9,13 +9,7 @@ import {
 const ContactUsSection: React.FC = () => {
   return (
     <section className='w-full relative'>
-      <div
-        className='w-full min-h-screen md:h-[600px] bg-cover bg-center relative'
-        style={{
-          backgroundImage:
-            "url('https://twa.com.pk/wp-content/uploads/2025/01/IMG-20250127-WA0010.jpg')",
-        }}
-      >
+      <div className="w-full min-h-screen md:h-[600px] bg-[url('https://twa.com.pk/wp-content/uploads/2025/01/IMG-20250127-WA0010.jpg')] bg-cover bg-center relative">
         <div className='absolute bottom-0 left-0 w-full h-25 md:h-35 bg-[#c3e92d]'></div>
 
         <div

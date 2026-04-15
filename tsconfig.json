@@ -13,7 +13,7 @@
     "esModuleInterop": true,
     "allowJs": true,
     "strict": true,
-    "moduleResolution": "node",
+"moduleResolution": "bundler",
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },

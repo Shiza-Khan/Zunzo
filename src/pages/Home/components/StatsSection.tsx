@@ -2,21 +2,9 @@ import React, { useState, useRef, ReactNode } from 'react'
 import { Users, Calendar } from 'lucide-react'
 import { GiRunningShoe } from 'react-icons/gi'
 import { FaAward } from 'react-icons/fa'
-
-interface Stat {
-  icon: ReactNode
-  number: number
-  label: string
-}
+import { stats } from '../utils/statsSection'
 
 const StatsSection: React.FC = () => {
-  const stats: Stat[] = [
-    { icon: <FaAward size={50} />, number: 196, label: 'Running Awards' },
-    { icon: <Users size={50} />, number: 2432, label: 'Active Members' },
-    { icon: <Calendar size={50} />, number: 244, label: 'Run Events' },
-    { icon: <GiRunningShoe size={50} />, number: 85, label: 'Miles Run' },
-  ]
-
   const [animatedNumbers, setAnimatedNumbers] = useState<number[]>(
     stats.map(() => 0),
   )
@@ -58,7 +46,9 @@ const StatsSection: React.FC = () => {
       >
         {stats.map((stat, index) => (
           <div key={index} className='flex flex-col items-center space-y-2'>
-            <div className='text-[#c3e92d] mb-2'>{stat.icon}</div>
+            <div className='text-[#c3e92d] mb-2'>
+              <stat.icon size={50} />
+            </div>{' '}
             <h2 className='text-3xl font-bold'>
               {animatedNumbers[index].toLocaleString()}
               {stat.label === 'Miles Run' ? 'KM' : ''}

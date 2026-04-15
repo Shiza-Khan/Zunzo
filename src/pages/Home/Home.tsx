@@ -1,12 +1,12 @@
-import HeroSection from './Hero/HeroSection'
-import StatsSection from './StatsSection/StatsSection'
-import About from './About/About'
-import ClientsSection from './Clients/ClientsSection'
-import RunningBenefitsSection from './Benefit/RunningBenefitsSection'
-import RunningEventsSection from './Events/RunningEventsSection'
-import CoursesSection from './Courses/CoursesSection'
-import TestimonialSection from './Testimonial/TestimonialSection'
-import ContactUsSection from './Contact/ContactUsSection'
+import HeroSection from './components/HeroSection'
+import StatsSection from './components/StatsSection'
+import About from './components/About'
+import ClientsSection from './components/ClientsSection'
+import RunningBenefitsSection from './components/RunningBenefitsSection'
+import RunningEventsSection from './components/RunningEventsSection'
+import CoursesSection from './components/CoursesSection'
+import TestimonialSection from './components/TestimonialSection'
+import ContactUsSection from './components/ContactUsSection'
 function Home() {
   return (
     <>

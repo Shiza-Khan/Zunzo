@@ -2,17 +2,9 @@ import React, { useState, useEffect, useRef } from 'react'
 import { Search, User, ShoppingCart, ChevronDown, Menu, X } from 'lucide-react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPersonRunning } from '@fortawesome/free-solid-svg-icons'
+import { menuItems } from '../utils/header'
 
 const MainNavbar: React.FC = () => {
-  const menuItems = [
-    { name: 'Home', options: ['Dashboard', 'Features'] },
-    { name: 'Pages', options: ['About Us', 'Services', 'FAQ'] },
-    { name: 'Our Events', options: ['Upcoming', 'Past'] },
-    { name: 'Shop', options: ['Products', 'Categories', 'Brands'] },
-    { name: 'News', options: ['Blog', 'Press'] },
-    { name: 'Contact', options: [] },
-  ]
-
   const [selected, setSelected] = useState<string | null>(null)
   const [openDropdown, setOpenDropdown] = useState<string | null>(null)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)

@@ -1,4 +1,3 @@
-// routes/publicRoutes.jsx
 import CommonErrorPage from '../components/404/CommonErrorPage'
 import MainLayout from '../pages/BaseLayout'
 import Home from '../pages/Home/Home'
